@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="container home">
+
+  <h1>Posts</h1>
+
+  <ul class="clean-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          <span>• {{ post.date | date: "%b %-d, %Y" }}</span>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</article>
+
+<div class="container pagination">
+  <span>Pagination</span>
+</div>

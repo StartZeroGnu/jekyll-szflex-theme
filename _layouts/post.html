@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="container post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header>
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <p>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+      {% if page.author %}
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">• {{ page.author | escape }}</span>
+      </span>
+      {% elsif site.author %}
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">• {{ site.author | escape }}</span>
+      </span>
+      {% endif %}
+    </p>
+  </header>
+
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
+
+<div>
+  <div class="container pagination">
+    <span>Pagination</span>
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</div>

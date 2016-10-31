@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include burguer.html %}
+
+    <main class="main flex-column">
+
+      <section class="main-content flex-column" aria-label="Content">
+          {{ content }}
+      </section>
+
+      <footer class="main-footer">
+        {% include footer.html %}
+      </footer>
+
+    </main>
+
+    <aside class="aside">
+      {% include title.html %}
+      {% include nav.html %}
+    </aside>
+
+  </body>
+
+</html>

@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+/**
+ * Theme
+ */
+body {
+  background: $bg-color;
+}
+
+/**
+ * Theme - Aside
+ */
+.aside {
+  background: $text-color;
+  color: $bg-color;
+  transition: 0.3s;
+
+  @include media-query($on-laptop) {
+    transition: none;
+  }
+}
+
+/**
+ * Theme - Aside (title)
+ */
+.site-title {
+  color: $brand-color;
+}
+
+/**
+ * Theme - Main footer
+ */
+.main-footer {
+  background: $light-grey;
+  font-size: 85%;
+}
+
+/**
+ *
+ */
+
+.pagination {
+  background: $mid-grey;
+}

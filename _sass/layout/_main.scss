@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the main of the site/application.
+// -----------------------------------------------------------------------------
+
+/**
+ * Layout
+ */
+html,
+body {
+  height: 100%;
+}
+
+/**
+ * Layout - 2 Columns
+ */
+.aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  @include media-query($on-laptop) {
+    width: 20%;
+    left: 0;
+  }
+}
+
+.main {
+  min-height: 100%;
+  @include media-query($on-laptop) {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
+/**
+ * Layout - Sticky
+ */
+.main-content,
+.home,
+.post {
+  flex: 1;
+}
+
+.home,
+.post,
+.pagination {
+  margin-bottom: 1rem;
+}
+
+/**
+ * Layout - Pagination
+ */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
