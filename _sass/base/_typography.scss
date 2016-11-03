@@ -1,13 +1,52 @@
 /**
- * Basic typography style for copy text
+ * Basic typography style
  */
+html {
+  font-size: 16px;
+}
+
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 100% / 1.6 $text-font-stack;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+}
+
+h1, h2, h3, h4 ,h5, h6,
+blockquote, figcaption {
+  font-family: $title-font;
+}
+
+blockquote,
+figcaption {
+  font-size: 85%;
+  font-style: italic;
+}
+
+figure {
+  text-align: center;
+}
+
+pre,
+code {
+  font-size: 85%;
+  font-family: $code-font-stack;
+}
+
+.site-author,
+.site-subtitle {
+  font-size: 60%;
+  font-weight: normal;
+}
+
+.search-title {
+  font-weight: normal;
+}
+
+.social-list {
+  text-align: center;
 }

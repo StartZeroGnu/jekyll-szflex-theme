@@ -1,21 +1,54 @@
 
 
+# [ default ENV=development ]
+#
+# JEKYLL_ENV=production bundle exec jekyll [s] [b]
+
+
+#
+# Site settings
+#
 title: Jekyll SZ Flex
+subtitle: Jekyll 3.3 Theme for Blog
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+baseurl: "/sz-flex" # the subpath of your site, e.g. /blog
+url: "http://startzerognu.neocities.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: StartZeroGnu
+
+navigation:
+  Archive: /archive/
+  Categories: /categories/
+  Tags: /tags/
+  Search: /search/
+  About: /about/
+
+disqus:
+  shortname: my_disqus_shortname
+
+google_analytics: UA-NNNNNNNN-N
+
+#
+# Build settings
+#
+permalink: pretty
 
 markdown: kramdown
 kramdown:
   input: GFM
 
-gems:
-  - jekyll-feed
+sass:
+  style: compressed
+
+incremental: true
+
+collections:
+  posts:
+    permalink: /blog/posts/:title.html
 
 exclude:
   - Gemfile
@@ -23,10 +56,13 @@ exclude:
   - LICENSE
   - README
 
-collections:
-  posts:
-    permalink: /blog/posts/:title
+#
+# Plugins settings
+#
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
 
-navigation:
-  Home: /
-  About: /about/
+paginate: 5
+paginate_path: /blog/page:num/

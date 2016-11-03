@@ -1,0 +1,15 @@
+<div class="container flex-row pagination">
+  {% if paginator.previous_page %}
+    <a class="previous button-light-blue" href="{{ paginator.previous_page_path | relative_url }}" title="Previous Page"><span class="icon">{% include svg/triangle-left.svg %}</span> Prev</a>
+  {% else %}
+    <span class="previous button-empty" title="Previous Page"><span class="icon">{% include svg/triangle-left.svg %}</span> Prev</span>
+  {% endif %}
+
+  <span class="button-empty">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a class="next button-light-blue" href="{{ paginator.next_page_path | relative_url }}" title="Next Page">Next <span class="icon">{% include svg/triangle-right.svg %}</span></a>
+  {% else %}
+    <span class="next button-empty" title="Next Page">Next <span class="icon">{% include svg/triangle-right.svg %}</span></span>
+  {% endif %}
+</div>

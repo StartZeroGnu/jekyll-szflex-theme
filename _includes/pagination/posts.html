@@ -1,0 +1,13 @@
+<div class="container flex-row pagination">
+  {% if page.previous.url %}
+    <a class="button-light-blue previous" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}"><span class="icon">{% include svg/triangle-left.svg %}</span> {{ page.previous.title | truncate: 45 }}</a>
+  {% else %}
+    <span class="button-empty"><span class="icon">{% include svg/triangle-left.svg %}</span> ...</span>
+  {% endif %}
+
+  {% if page.next.url %}
+    <a class="button-light-blue next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">{{ page.next.title | truncate: 45 }} <span class="icon">{% include svg/triangle-right.svg %}</span></a>
+  {% else %}
+    <span class="button-empty">... <span class="icon">{% include svg/triangle-right.svg %}</span></span>
+  {% endif %}
+</div>

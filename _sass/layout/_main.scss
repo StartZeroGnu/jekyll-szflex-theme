@@ -18,6 +18,7 @@ body {
   top: 0;
   bottom: 0;
   left: -100%;
+
   @include media-query($on-laptop) {
     width: 20%;
     left: 0;
@@ -26,6 +27,7 @@ body {
 
 .main {
   min-height: 100%;
+
   @include media-query($on-laptop) {
     width: 80%;
     margin-left: 20%;
@@ -38,11 +40,16 @@ body {
 .main-content,
 .home,
 .post {
-  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .home,
 .post,
+.post-header,
 .pagination {
   margin-bottom: 1rem;
 }
@@ -51,6 +58,47 @@ body {
  * Layout - Pagination
  */
 .pagination {
-  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.next {
+  margin-left: 0.50rem;
+}
+
+.previous {
+  margin-right: 0.50rem;
+}
+
+/**
+ * Layout - Author
+ */
+.site-author,
+.site-subtitle {
+  display: block;
+}
+
+/**
+ * Layout - Main nav
+ */
+.main-nav-a {
+  display: block;
+  padding: 0.50rem 0.25rem;
+}
+
+/**
+ * Layout - Posts
+ */
+.post-title {
+  margin-bottom: 0;
+}
+
+/**
+ * Layout - Search
+ */
+#search-input {
+  padding: 0.50rem;
 }

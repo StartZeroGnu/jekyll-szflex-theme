@@ -1,0 +1,13 @@
+
+
+# [ default ENV=development ]
+#
+# bundle exec jekyll [s] [b] --config "_config.yml,_config.dev.yml"
+
+baseurl: ""
+url: ""
+
+sass:
+  style: expanded
+
+incremental: false

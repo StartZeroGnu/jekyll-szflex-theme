@@ -4,7 +4,6 @@
 
 
 
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
@@ -13,15 +12,11 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
+/// Tiles font family
+/// @type List
+$title-font: 'Courgette', cursive !default;
 
 
-/// Theme colors
-/// @type Color
-$theme: rgb(52, 152, 219) !default; // main color
-$bg-color: rgb(240, 248, 255) !default; // background color
-$comp-theme: rgb(241, 196, 15) !default; // complementary color
-
-$brand-color: $theme !default;
 
 /// Copy text color
 /// @type Color
@@ -39,6 +34,35 @@ $mid-grey: rgb(149, 165, 166) !default;
 /// @type Color
 $dark-grey: rgb(127, 140, 141) !default;
 
+/// White
+/// @type Color
+$white: rgb(255, 255, 255) !default;
+
+/// Theme colors
+/// @type Color
+
+// main color
+$theme: rgb(52, 152, 219) !default;
+// background color
+$bg-color: rgb(240, 248, 255) !default;
+// complementary color
+$comp-theme: rgb(241, 196, 15) !default;
+// main theme color
+$brand-color: $theme !default;
+
+/// Buttons - Icons colors
+/// @type Color
+
+// red
+$red: rgb(231, 76, 60) !default;
+// orange
+$orange: rgb(243, 156, 18) !default;
+// purple
+$purple: rgb(155, 89, 182) !default;
+// light-green
+$light-green: rgb(46, 204, 113) !default;
+// dark-green
+$dark-green: rgb(22, 160, 133) !default;
 
 
 
@@ -50,8 +74,6 @@ $max-width: 900px !default;
 /// @type Length
 $on-palm:          768px !default;
 $on-laptop:        1024px !default;
-
-
 
 
 /// Relative or absolute URL where all assets are served from

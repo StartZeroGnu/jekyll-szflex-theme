@@ -1,0 +1,29 @@
+---
+layout: page
+title: Search
+permalink: /search/
+---
+
+<h2 class="search-title"><span class="icon">{% include svg/search.svg %}</span> Search by: Title, Cat, Tag, Date and Full text</h2>
+
+<div>
+  <input id="search-input" class="container" type="text" placeholder="Search..." autofocus="autofocus">
+</div>
+<div class="search-box">
+  <ul id="results-container" class="clean-list"></ul>
+</div>
+
+<script src="{{ "/assets/js/search.min.js" | relative_url }}"></script>
+
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ "/search/search.json" | relative_url }}',
+    searchResultTemplate: '<li><span class="icon">{% include svg/arrow-right.svg %}</span> <a href="{url}" title="{title}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+</script>

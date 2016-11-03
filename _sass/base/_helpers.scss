@@ -3,15 +3,6 @@
 // -----------------------------------------------------------------------------
 
 /**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-/**
  * Main content containers
  * 1. Make the container full-width with a maximum width
  * 2. Center it in the viewport
@@ -55,7 +46,7 @@
 }
 
 /**
- * Lists - Clean style
+ * Helpers - Clean list
  */
 .clean-list {
   list-style: none;
@@ -64,16 +55,31 @@
 }
 
 /**
- * Flex - Row
+ * Helpers - Flex row
  */
 .flex-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
 /**
- * Flex - Column
+ * Helpers - Flex column
  */
 .flex-column {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
