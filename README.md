@@ -28,14 +28,28 @@ Jekyll 3.3 Theme for Blog
 
 ## Usage
 
-With [Mr. Hyde's][hyde] use like:
+* With [Dr. Jekyll Themes][drjekyllthemes] use like:
 
-```
-$ mrhyde new sz-flex
-```
+  ```
+  $ drjekyll new szflexblog
+  ```
+
+This will download the Theme from [Dr. Jekyll Themes][drjekyllthemes]
+
+* With [Mr. Hyde's][hyde] use like:
+
+> for the moment does not work
+
+  ```
+  $ mrhyde new sz-flex
+  ```
+
+> for the moment does not work
 
 This will run [sz-flex.rb][script] from [Mr. Hyde's Scripts][hydescripts] and
 it will download the Theme from [Dr. Jekyll Themes][drjekyllthemes]
+
+> for the moment does not work
 
 ## Contributing
 
