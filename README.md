@@ -64,7 +64,7 @@ it will download the Theme from [Dr. Jekyll Themes][drjekyllthemes]
 [hyde]: https://github.com/mrhydescripts
 [hydescripts]: https://github.com/mrhydescripts/scripts
 [script]: https://github.com/mrhydescripts/scripts/blob/master/sz-flex.rb
-[drjekyllthemes]: TODO
+[drjekyllthemes]: https://github.com/drjekyllthemes
 [geraldb]: https://github.com/geraldb
 [sass-boilerplate]: https://github.com/HugoGiraudel/sass-boilerplate
 [hugogiraudel]: https://github.com/HugoGiraudel
