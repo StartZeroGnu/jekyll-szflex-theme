@@ -1,6 +1,6 @@
 # Jekyll SZ Flex Theme
 
-Jekyll 3.3 Theme for Blog
+Jekyll 3.3 Theme for Blog · [**Live preview on gh-pages**](https://startzerognu.github.io/jekyll-szflex-theme/)
 
 ## Features
 
