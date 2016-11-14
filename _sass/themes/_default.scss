@@ -149,3 +149,46 @@ figure {
   border: 1px solid $mid-grey;
   color: $mid-grey;
 }
+
+/**
+ * Theme - Home content
+ */
+.home {
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem $text-color;
+  background: $brand-color image('bg.svg') center center;
+  background-size: cover;
+  text-align: center;
+  color: $bg-color;
+}
+
+/**
+ * Theme - Home header
+ */
+.home-title {
+  font-size: 300%;
+}
+
+.home-subtitle {
+  font-size: 120%;
+}
+
+/**
+ * Theme - Home nav
+ */
+.home-nav {
+  font-family: $title-font;
+}
+
+/**
+ * Theme - Home links
+ */
+.home-link {
+  box-shadow: 0 0.0625rem 0.0625rem $text-color;
+
+  @include on-event {
+    transform: scale(1.1);
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

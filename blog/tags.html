@@ -1,0 +1,31 @@
+---
+layout: page
+title: Tags
+permalink: /blog/tags/
+---
+
+{% if site.tags != empty %}
+
+  <nav>
+    {% for tag in site.tags %}
+      <a class="button-light-blue" href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="tag"><i class="fa fa-tag"></i> {{ tag[0] }}</a>
+    {% endfor %}
+  </nav>
+
+  {% for tag in site.tags reversed %}
+  <ul class="clean-list">
+    <h2  id="{{ tag[0] }}">{{ tag[0] }}</h2>
+    {% for post in tag[1] %}
+    <li>
+      <i class="fa fa-calendar"></i>
+      <time datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
+      <i class="fa fa-caret-right"></i>
+      <a href="{{ post.url | relative_url }}" title="{{ post.title }}"> {{ post.title }} </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+{% else %}
+  <h2>Empty</h2>
+{% endif %}

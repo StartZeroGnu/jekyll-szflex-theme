@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="home flex-column" name="home">
+
+  <header class="home-header">
+    <h1 class="home-title">{{ site.title | escape }}</h1>
+    {% if site.subtitle %}
+      <p class="home-subtitle">{{ site.subtitle | escape }}</p>
+    {% endif %}
+  </header>
+
+  {{ content }}
+
+</section>

@@ -1,13 +1,17 @@
-# Jekyll SZ Flex Theme
+---
+layout: page
+title: About SZ Flex
+permalink: /blog/about/
+---
 
 Jekyll 3.3 Theme for Blog
 
 ## Features
 
-* 2 Columns
-* Sass Boilerplate 1-7
-* Normalize v.5.0.0
-* Flexbox Layout (mobile first)
+* 2 columns
+* sass boilerplate 1-7
+* normalize v.5.0.0
+* flexbox layout (mobile first)
   * Chrome v.4 +, Chrome for android (all)
   * Firefox v.2 +, Firefox for android (all)
   * Opera v.12.1 +, Opera mobile v.12.1 +, Opera Mini (all)
@@ -20,49 +24,22 @@ Jekyll 3.3 Theme for Blog
   * UC browser for android v.11 +
   * Samsung internet v.4 +
   * [**More info**][caniuse]
-* Toggle aside without JS
-* Icon font (font awesome)
-* Full text search
-* Pagination
-* Sitemap
+* toggle aside without JS
+* svg icons (Octicons 4.3.0, Social icons)
+* full text search
+* pagination
+* sitemap
 
 ## Usage
 
-* **GH-Pages**
+With [Mr. Hyde's][hyde] use like:
 
-  Fork repo, remove master branch and customize `config.yml` with your site settings.
+```
+$ mrhyde new sz-flex
+```
 
-* **[Dr. Jekyll Themes][drjekyllthemes]**
-
-  Install drjekyll
-
-  ```
-  ~ $ gem install drjekyll
-  ```
-  Download theme
-
-  ```
-  ~ $ drjekyll new szflex
-  ```
-
-  This will download the Theme from [Dr. Jekyll Themes][drjekyllthemes]
-
-* **[Mr. Hyde's][hyde]**:
-
-  Install mrhyde-tools
-
-  ```
-  ~ $ gem install mrhyde-tools
-  ```
-
-  Download Theme
-
-  ```
-  ~ $ mrhyde new sz-flex
-  ```
-
-  This will run [sz-flex.rb][script] from [Mr. Hyde's Scripts][hydescripts] and
-  it will download the Theme from [Dr. Jekyll Themes][drjekyllthemes]
+This will run [sz-flex.rb][script] from [Mr. Hyde's Scripts][hydescripts] and
+it will download the Theme from [Dr. Jekyll Themes][drjekyllthemes]
 
 ## Contributing
 
@@ -72,7 +49,7 @@ Jekyll 3.3 Theme for Blog
 
 [Script][script] Public domain license · Theme [MIT][mit] license.
 
-## Credits & Thanks
+## Credits Thanks
 
 * [Mr. Hyde's][hyde] by [Gerald Bauer][geraldb]
 * [Mr. Hyde's Scripts][hydescripts] by [Gerald Bauer][geraldb]
@@ -80,18 +57,18 @@ Jekyll 3.3 Theme for Blog
 * [Sass boilerplate][sass-boilerplate] by [Hugo Giraudel][hugogiraudel]
 * [Normalize][normalize] by [Nicolas Gallagher][necolas]
 * [Courgette][courgette] by [Karolina Lach][karolinalach]
-* [Background Image][image] by [JDDesign][jddesign]
-* [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy]
+* [Test image][image] by [JuralMin][juralmin]
+* [Octicons][octicons] by [Jon Rohan][jonrohan]
 * [Simple Jekyll Search][search] by [Christian Fei][christian-fei]
-* [Jekyll Feed][feed] by [Ben Balter][ben-balter]
-* [Jekyll Paginate][paginate] by [Parker Moore][parker-moore]
-* [Jekyll Sitemap][sitemap] by [Ben Balter][ben-balter]
+* [Jekyll Feed][feed]
+* [Jekyll Paginate][paginate]
+* [Jekyll Sitemap][sitemap]
 
 [caniuse]: http://caniuse.com/#feat=flexbox
 [hyde]: https://github.com/mrhydescripts
 [hydescripts]: https://github.com/mrhydescripts/scripts
 [script]: https://github.com/mrhydescripts/scripts/blob/master/sz-flex.rb
-[drjekyllthemes]: https://github.com/drjekyllthemes
+[drjekyllthemes]: TODO
 [geraldb]: https://github.com/geraldb
 [sass-boilerplate]: https://github.com/HugoGiraudel/sass-boilerplate
 [hugogiraudel]: https://github.com/HugoGiraudel
@@ -99,16 +76,14 @@ Jekyll 3.3 Theme for Blog
 [necolas]: https://github.com/necolas
 [courgette]: https://fonts.google.com/specimen/Courgette
 [karolinalach]: https://plus.google.com/+KarolinaLach
-[image]: https://pixabay.com/en/background-polygon-purple-violet-1409025/
-[jddesign]: https://pixabay.com/en/users/JDDesign-2595351/
+[image]: https://pixabay.com/en/carousel-website-page-layout-1684591/
+[juralmin]: https://pixabay.com/en/users/JuralMin-2051452/
 [issues]: https://github.com/StartZeroGnu/jekyll-szflex-theme/issues
 [mit]: https://opensource.org/licenses/MIT
 [search]: https://github.com/christian-fei/Simple-Jekyll-Search
 [christian-fei]: https://github.com/christian-fei
-[font-awesome]: http://fontawesome.io/
-[dave-gandy]: https://github.com/davegandy
+[octicons]: https://github.com/primer/octicons/
+[jonrohan]: https://github.com/jonrohan
 [feed]: https://github.com/jekyll/jekyll-feed
 [paginate]: https://github.com/jekyll/jekyll-paginate
 [sitemap]: https://github.com/jekyll/jekyll-sitemap
-[ben-balter]: https://github.com/benbalter
-[parker-moore]: https://github.com/parkr

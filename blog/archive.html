@@ -1,0 +1,27 @@
+---
+layout: page
+title: Archive
+permalink: /blog/archive/
+---
+
+{% if site.posts != empty %}
+  <ul class="clean-list">
+    {% for post in site.posts %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% unless year == this_year %}
+    {% assign year = this_year %}
+    {% unless post == site.posts.first %}
+    {% endunless %}
+      <h2 id="{{ year }}">{{ year }}</h2>
+    {% endunless %}
+    <li>
+      <i class="fa fa-calendar"></i>
+      <time datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:'%d %b' }}</time>
+      <i class="fa fa-caret-right"></i>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <h2>Empty</h2>
+{% endif %}

@@ -7,17 +7,17 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <span class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        <span class="icon">{% include svg/calendar.svg %}</span>
+        <i class="fa fa-calendar"></i>
         {{ page.date | date_to_string }}
       </time>
       {% if page.author %}
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        • <span class="icon">{% include svg/person.svg %}</span>
+        • <i class="fa fa-user"></i>
         <span itemprop="name">{{ page.author | escape }}</span>
       </span>
       {% elsif site.author %}
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        • <span class="icon">{% include svg/person.svg %}</span>
+        • <i class="fa fa-user"></i>
         <span itemprop="name">{{ site.author | escape }}</span>
       </span>
       {% endif %}

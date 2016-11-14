@@ -6,7 +6,8 @@
  * Layout
  */
 html,
-body {
+body,
+section[name="home"] {
   height: 100%;
 }
 
@@ -38,7 +39,7 @@ body {
  * Layout - Sticky
  */
 .main-content,
-.home,
+.blog,
 .post {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -47,7 +48,7 @@ body {
   flex: 1 1 auto;
 }
 
-.home,
+.blog,
 .post,
 .post-header,
 .pagination {

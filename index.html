@@ -1,27 +1,9 @@
 ---
-layout: default
+layout: home
 ---
 
-<article class="container home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="clean-list post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2 class="post-title">
-          <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-        </h2>
-        <span class="post-meta">
-          <span class="icon">{% include svg/calendar.svg %}</span>
-          {{ post.date | date_to_string }}
-        </span>
-      </li>
-    {% endfor %}
-  </ul>
-
-</article>
-
-{% if paginator.total_pages > 1 %}
-  {% include pagination/pages.html %}
-{% endif %}
+<nav class="home-nav">
+  <a class="home-link button-white" href="{{ "/blog/archive/" | relative_url }}">Archive</a>
+  <a class="home-link button-white" href="{{ "/blog/" | relative_url }}">Blog</a>
+  <a class="home-link button-white" href="{{ "/blog/search/" | relative_url }}">Search</a>
+</nav>

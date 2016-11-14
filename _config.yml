@@ -15,17 +15,17 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-baseurl: "/sz-flex" # the subpath of your site, e.g. /blog
-url: "http://startzerognu.neocities.org" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jekyll-szflex-theme" # the subpath of your site, e.g. /blog
+url: "https://startzerognu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: StartZeroGnu
 
 navigation:
-  Archive: /archive/
-  Categories: /categories/
-  Tags: /tags/
-  Search: /search/
-  About: /about/
+  Archive: /blog/archive/
+  Categories: /blog/categories/
+  Tags: /blog/tags/
+  Search: /blog/search/
+  About: /blog/about/
 
 disqus:
   shortname: my_disqus_shortname
@@ -48,7 +48,7 @@ incremental: true
 
 collections:
   posts:
-    permalink: /blog/posts/:title.html
+    permalink: /blog/posts/:title
 
 exclude:
   - Gemfile
@@ -65,4 +65,4 @@ gems:
   - jekyll-sitemap
 
 paginate: 5
-paginate_path: /blog/page:num/
+paginate_path: /blog/pagination/page:num/

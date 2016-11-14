@@ -4,26 +4,33 @@
   {% include head.html %}
 
   <body>
+    {% if page.url == '/' %}
 
-    {% include burguer.html %}
+      {{ content }}
 
-    <main class="main flex-column">
+    {% else %}
 
-      <section class="main-content flex-column" aria-label="Content">
-          {{ content }}
-      </section>
+      {% include burguer.html %}
 
-      <footer class="main-footer">
-        {% include footer.html %}
-      </footer>
+      <main class="main flex-column">
 
-    </main>
+        <section class="main-content flex-column" aria-label="Content">
+            {{ content }}
+        </section>
 
-    <aside class="aside">
-      {% include aside/title.html %}
-      {% include aside/nav.html %}
-      {% include aside/social.html %}
-    </aside>
+        <footer class="main-footer">
+          {% include footer.html %}
+        </footer>
+
+      </main>
+
+      <aside class="aside">
+        {% include aside/title.html %}
+        {% include aside/nav.html %}
+        {% include aside/social.html %}
+      </aside>
+
+    {% endif %}
 
   </body>
 

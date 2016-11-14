@@ -1,3 +1,25 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: font('font-awesome/fontawesome-webfont.woff');
+  src: font('font-awesome/fontawesome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Courgette';
+  src: font('courgette/Courgette-Regular.woff');
+  src: font('courgette/Courgette-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
