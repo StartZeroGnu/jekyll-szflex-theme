@@ -32,6 +32,13 @@ Jekyll 3.3 Theme for Blog · [**Live preview on gh-pages**](https://startzerognu
 
   Fork repo, remove master branch and customize `config.yml` with your site settings.
 
+  If you want to use the theme in a project page, add the name of the repository to
+  `$base-url: '/assets/';` in `/assets/css/style.scss` like this:
+
+  ```scss
+  $base-url: '/jekyll-szflex-theme/assets/';
+  ```
+
 * **[Dr. Jekyll Themes][drjekyllthemes]**
 
   Install drjekyll
