@@ -28,7 +28,7 @@ navigation:
   About: /blog/about/
 
 disqus:
-  shortname: my_disqus_shortname
+  shortname: szflex-ghpages
 
 google_analytics: UA-NNNNNNNN-N
 
