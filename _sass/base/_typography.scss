@@ -50,3 +50,19 @@ code {
 .social-list {
   text-align: center;
 }
+
+.home {
+  font-size: 110%;
+
+  @include media-query($on-palm) {
+    font-size: 125%;
+  }
+
+  @include media-query($on-laptop) {
+    font-size: 150%;
+  }
+}
+
+.home-nav {
+  font-family: $title-font;
+}

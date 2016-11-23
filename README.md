@@ -87,7 +87,7 @@ Jekyll 3.3 Theme for Blog · [**Live preview on gh-pages**](https://startzerognu
 * [Sass boilerplate][sass-boilerplate] by [Hugo Giraudel][hugogiraudel]
 * [Normalize][normalize] by [Nicolas Gallagher][necolas]
 * [Courgette][courgette] by [Karolina Lach][karolinalach]
-* [Background Image][image] by [JDDesign][jddesign]
+* [Background Image][image] by [OpenClipart-Vectors][openclipart-vectors]
 * [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy]
 * [Simple Jekyll Search][search] by [Christian Fei][christian-fei]
 * [Jekyll Feed][feed] by [Ben Balter][ben-balter]
@@ -106,8 +106,8 @@ Jekyll 3.3 Theme for Blog · [**Live preview on gh-pages**](https://startzerognu
 [necolas]: https://github.com/necolas
 [courgette]: https://fonts.google.com/specimen/Courgette
 [karolinalach]: https://plus.google.com/+KarolinaLach
-[image]: https://pixabay.com/en/background-polygon-purple-violet-1409025/
-[jddesign]: https://pixabay.com/en/users/JDDesign-2595351/
+[image]: https://pixabay.com/en/background-blue-wallpaper-design-159244/
+[openclipart-vectors]: https://pixabay.com/en/users/OpenClipart-Vectors-30363/
 [issues]: https://github.com/StartZeroGnu/jekyll-szflex-theme/issues
 [mit]: https://opensource.org/licenses/MIT
 [search]: https://github.com/christian-fei/Simple-Jekyll-Search

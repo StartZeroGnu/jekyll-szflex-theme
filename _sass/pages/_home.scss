@@ -27,20 +27,8 @@
 }
 
 /**
- * Layout - Home nav
- */
-.home-nav {
-  display: flex;
-  align-items: baseline;
-}
-
-/**
  * Layout - Home links
  */
 .home-link:nth-child(2) {
   padding: 1rem;
-}
-
-.home-link:not(:last-child) {
-  margin-right: 0.75rem;
 }

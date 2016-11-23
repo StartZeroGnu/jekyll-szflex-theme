@@ -93,6 +93,11 @@ section[name="home"] {
 /**
  * Layout - Posts
  */
+.post,
+.blog {
+  margin-top: 1.75rem;
+}
+
 .post-title {
   margin-bottom: 0;
 }
