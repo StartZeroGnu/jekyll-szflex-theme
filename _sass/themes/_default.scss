@@ -31,6 +31,11 @@ a {
   }
 }
 
+h1:not(.home-title) {
+  color: $comp-theme;
+  text-shadow: 1px 1px 1px $text-color;
+}
+
 /**
  * Theme - Blockquotes
  */
@@ -81,9 +86,13 @@ figure {
  * Theme - Aside
  */
 .aside {
-  background: $text-color;
+  //background: $text-color;
+  background: $brand-color image('bg.svg') center center;
+  background-size: cover;
+  text-shadow: 1px 1px 1px $text-color;
   color: $bg-color;
   transition: 0.3s;
+  overflow-y: auto;
 
   @include media-query($on-laptop) {
     transition: none;
@@ -113,8 +122,7 @@ figure {
  * Theme - Aside (Title)
  */
  .site-title {
-   color: $brand-color;
-   text-shadow: 1px 1px black;
+   color: $bg-color;
  }
 
 .site-author {
@@ -130,7 +138,7 @@ figure {
 
 .main-nav-a {
   @include on-event {
-    background-color: rgba($bg-color, 0.1);
+    background-color: rgba($bg-color, 0.3);
   }
 }
 
@@ -162,27 +170,10 @@ figure {
 }
 
 /**
- * Theme - Home header
+ * Theme - Home links / Aside (Social Links)
  */
-.home-title {
-  font-size: 300%;
-}
-
-.home-subtitle {
-  font-size: 120%;
-}
-
-/**
- * Theme - Home nav
- */
-.home-nav {
-  font-family: $title-font;
-}
-
-/**
- * Theme - Home links
- */
-.home-link {
+.home-link,
+.social-list > a {
   box-shadow: 0 0.0625rem 0.0625rem $text-color;
 
   @include on-event {
