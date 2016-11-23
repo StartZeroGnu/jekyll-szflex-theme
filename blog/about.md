@@ -4,7 +4,7 @@ title: About SZ Flex
 permalink: /blog/about/
 ---
 
-Jekyll 3.3 Theme for Blog ·[**Live preview on gh-pages**](https://startzerognu.github.io/jekyll-szflex-theme/)
+Jekyll 3.3 Theme for Blog · [**Live preview on gh-pages**](https://startzerognu.github.io/jekyll-szflex-theme/)
 
 ## Features
 
